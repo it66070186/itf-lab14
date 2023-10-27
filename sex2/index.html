@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>pictureofmyballs</title>
+    <link rel="stylesheet" href="./style.css">
+    <script>
+        function choosewho(){
+            document.getElementById("usernames").innerHTML = "picture of " + document.getElementById("username").value;
+        }
+
+        function choosepfp(){
+            document.getElementById("profilepic").style.backgroundImage = "url(" + document.getElementById("profilepicture").value + ")";
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="content">
+        <div class ="avatar">
+            <div class="profile-img" id="profilepic">
+            </div>
+            <div class="noti">0+</div>            
+        </div>
+        <div class="username">
+            <a href="https://www.roblox.com/games/4111023553/Deepwoken" class="on-hover">
+            <p style="font-size: x-large; font-weight: 600;" id="usernames">picture of balls</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label>Username</label><input style="margin-left: 10px;" type="text" id="username"><button id="choosewho" onclick="choosewho()">Apply</button></div>
+            <div><label>Profile Image</label><input type="text" id="profilepicture"><button id="choosepfp" onclick="choosepfp()">Apply</button></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item col-span" style="background-image:url(./img2.png);"></div>
+            <div class="gallery-item row-span" style="background-image:url(./img1.jpg);"></div>
+            <div class="gallery-item" style="background-image:url(./img3.jpg);"></div>
+            <div class="gallery-item" style="background-image:url(./img4.jpg);"></div>
+            <div class="gallery-item" style="background-image:url(./img5.jpg);"></div>
+            <div class="gallery-item" style="background-image:url(./img6.png);"></div>
+            <div class="gallery-item" style="background-image:url(./img7.png);"></div>
+            <div class="gallery-item" style="background-image:url(./img8.jpg);"></div>
+            <div class="gallery-item" style="background-image:url(./img9.jpg);"></div>
+            <div class="gallery-item" style="background-image:url(./img10.jpeg);"></div>
+            <!-- <div class="gallery-itme"></div>
+            <div class="gallery-item"></div>-->
+        </div>
+    </div>
+</body>
+</html>
